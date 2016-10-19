@@ -1,0 +1,12 @@
+[submodule "torch7"]
+	path = torch7
+	url = https://github.com/tuotuoxp/torch7
+[submodule "nn"]
+	path = nn
+	url = https://github.com/tuotuoxp/nn
+[submodule "cpp-torch"]
+	path = cpp-torch
+	url = https://github.com/tuotuoxp/cpp-torch
+[submodule "cutorch"]
+	path = cutorch
+	url = https://github.com/tuotuoxp/cutorch
