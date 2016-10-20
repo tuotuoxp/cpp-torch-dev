@@ -17,14 +17,12 @@ cd /D %dir%\build
 mkdir %dir%\build\THC
 cd %dir%\build\THC
 cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH="%dest%" -DCMAKE_INSTALL_PREFIX="%dest%" "%dir%\cutorch\lib\THC"
-nmake
 nmake install
 
 
 mkdir %dir%\build\THCUNN
 cd %dir%\build\THCUNN
 cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH="%dest%" -DCMAKE_INSTALL_PREFIX="%dest%" "%dir%\cunn\lib\THCUNN"
-nmake
 nmake install
 
 cd %dir%
