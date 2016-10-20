@@ -21,4 +21,10 @@ nmake
 nmake install
 
 
+mkdir %dir%\build\THCUNN
+cd %dir%\build\THCUNN
+cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH="%dest%" -DCMAKE_INSTALL_PREFIX="%dest%" "%dir%\cunn\lib\THCUNN"
+nmake
+nmake install
+
 cd %dir%

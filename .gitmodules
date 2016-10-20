@@ -10,3 +10,6 @@
 [submodule "cutorch"]
 	path = cutorch
 	url = https://github.com/tuotuoxp/cutorch
+[submodule "cunn"]
+	path = cunn
+	url = https://github.com/tuotuoxp/cunn
