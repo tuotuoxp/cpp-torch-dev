@@ -19,7 +19,7 @@ if "%CUDA_PATH%" == "" (
 ) else (
     set cuda_param=1
 )
-cmake -G "Visual Studio 14 2015 Win64" -DWITH_CUDA=%cuda_param% -DCMAKE_PREFIX_PATH="%dest%" -DCMAKE_INSTALL_PREFIX="%dest%" "%dir%\cpp-torch"
+cmake -G "Visual Studio 14 2015 Win64" -DBUILD_TESTS=ON -DBUILD_CUDA=%cuda_param% -DCMAKE_PREFIX_PATH="%dest%" -DCMAKE_INSTALL_PREFIX="%dest%" "%dir%\cpp-torch"
 
 
 cd %dir%
