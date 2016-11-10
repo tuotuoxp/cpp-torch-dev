@@ -1,6 +1,7 @@
 #!/bin/sh
 
 basedir=$(cd "$(dirname "${BASH_SOURCE}")" && pwd)
+olddir=$(pwd)
 
 if [ "$1" == "" ]
 then
@@ -23,5 +24,5 @@ cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTS=ON -DBUILD_CUDA=$enable_cuda -DCM
 make && make install
 
 
-cd $basedir
+cd $olddir
 
