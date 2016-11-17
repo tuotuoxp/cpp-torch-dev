@@ -19,7 +19,7 @@ if "%CUDA_PATH%" == "" (
 ) else (
     set cuda_param=ON
 )
-cmake -G "NMake Makefiles" -DBUILD_TESTS=ON -DBUILD_CUDA=%cuda_param% -DCMAKE_PREFIX_PATH="%dest%" -DCMAKE_INSTALL_PREFIX="%dest%" "%dir%\cpp-torch"
+cmake -G "NMake Makefiles" -DBUILD_CUDA=%cuda_param% -DCMAKE_PREFIX_PATH="%dest%" -DCMAKE_INSTALL_PREFIX="%dest%" "%dir%\cpp-torch"
 nmake
 nmake install
 
